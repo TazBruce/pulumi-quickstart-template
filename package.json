@@ -1,0 +1,14 @@
+{
+    "name": "pulumi-quickstart-template",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^16"
+    },
+    "dependencies": {
+        "@tazbruce/pulumi-quickstart-library": "^1.0.0",
+        "@pulumi/aws": "^5.42.0",
+        "@pulumi/docker": "^4.2.3",
+        "@pulumi/gcp": "^6.0.0",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}

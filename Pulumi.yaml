@@ -1,0 +1,47 @@
+name: pulumi-quickstart-template
+runtime: nodejs
+description: This is a Pulumi template which can be used to quickly build and deploy a containerised app
+template:
+  config:
+    aws:region:
+      description: "AWS Region"
+      default: "ap-southeast-2"
+    aws:accessKey:
+      description: "AWS Access Key"
+      secret: true
+    aws:secretKey:
+      description: "AWS Secret Key"
+      secret: true
+    gcp:project:
+      description: "GCP Project"
+      default: "partplanner"
+    gcp:region:
+      description: "GCP Region"
+      default: "australia-southeast1"
+    gcp:credentials:
+      description: "GCP Credentials"
+      secret: true
+    apiDomain:
+      description: "The domain name for the API"
+      default: "api.appName.co.nz"
+    appPath:
+      description: "The path to the app"
+      default: "../api"
+    appUrl:
+      description: "The url to the app"
+      default: "https://app.appName.co.nz"
+    concurrency:
+      description: "The number of concurrent requests to allow"
+      default: "50"
+    containerPort:
+      description: "The port the container listens on"
+      default: "8080"
+    cpu:
+      description: "The number of CPU units to allocate"
+      default: "1"
+    imageName:
+      description: "The name of the image to build"
+      default: "api"
+    memory:
+      description: "The amount of memory to allocate"
+      default: "512Mi"
