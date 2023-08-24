@@ -14,7 +14,7 @@ template:
       secret: true
     gcp:project:
       description: "GCP Project"
-      default: "partplanner"
+      default: "xyz"
     gcp:region:
       description: "GCP Region"
       default: "australia-southeast1"
@@ -23,13 +23,13 @@ template:
       secret: true
     apiDomain:
       description: "The domain name for the API"
-      default: "api.appName.co.nz"
+      default: "api.xys.co.nz"
     appPath:
       description: "The path to the app"
       default: "../api"
     appUrl:
       description: "The url to the app"
-      default: "https://app.appName.co.nz"
+      default: "https://app.xyz.com"
     concurrency:
       description: "The number of concurrent requests to allow"
       default: "50"
